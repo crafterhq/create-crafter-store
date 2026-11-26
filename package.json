@@ -1,0 +1,48 @@
+{
+  "name": "create-crafter-store",
+  "version": "0.1.0",
+  "description": "Create a Next.js storefront for your headless Crafter store: product list, cart and CrafterPayments checkout.",
+  "keywords": [
+    "crafter",
+    "crafterpayments",
+    "nextjs",
+    "headless",
+    "storefront",
+    "starter",
+    "template"
+  ],
+  "license": "MIT",
+  "author": "Crafter Technologies LLC",
+  "homepage": "https://github.com/crafterhq/create-crafter-store#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crafterhq/create-crafter-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crafterhq/create-crafter-store/issues"
+  },
+  "type": "module",
+  "bin": {
+    "create-crafter-store": "bin/create-crafter-store.mjs"
+  },
+  "files": [
+    "bin",
+    "template",
+    "!template/node_modules",
+    "!template/.next",
+    "!template/.env",
+    "!template/.env.local",
+    "!template/next-env.d.ts",
+    "!template/package-lock.json",
+    "!template/*.tsbuildinfo"
+  ],
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "build": "npm --prefix template run build",
+    "lint": "npm --prefix template run lint",
+    "typecheck": "npm --prefix template run typecheck"
+  }
+}
